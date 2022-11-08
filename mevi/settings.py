@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-bv34oziju$jslyig25=4b*dl&)&6r-q)#+--b09%4gyx44fr62
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.vercel.app', '.now.sh']
 
 
 # Application definition
@@ -81,7 +81,7 @@ WSGI_APPLICATION = 'mevi.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': str(os.path.join(BASE_DIR, "db.sqlite3")),
     }
 }
 
@@ -125,7 +125,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS=[ 
-    os.path.join(BASE_DIR,'static'),
+    os.path.join(BASE_DIR,'staticfiles_build','static'),
 ]
 
 #  Default primary key field type
