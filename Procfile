@@ -1,0 +1,1 @@
+web gunicorn mevi.wsgi:application --log-file_
