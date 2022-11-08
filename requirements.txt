@@ -59,7 +59,7 @@ whitenoise==6.2.0
 win-unicode-console==0.5
 wincertstore==0.2
 
-xlwings==0.24.9
+
 
 yellowbrick==1.5
 zict==2.0.0
