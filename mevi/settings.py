@@ -31,9 +31,9 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG',cast=bool)
 
-ALLOWED_HOSTS = ['mevitechnologies.com','mevitechnologies.up.railway.app']
+ALLOWED_HOSTS = ['mevitechnologies.com','mevitechnologies.up.railway.app','www.mevitechnologies.com']
 
-CSRF_TRUSTED_ORIGINS = ['https://www.mevitechnologies.com','https://mevitechnologies.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['https://www.mevitechnologies.com','https://mevitechnologies.up.railway.app','https://mevitechnologies.com/']
 
 
 # Application definition
