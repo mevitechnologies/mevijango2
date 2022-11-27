@@ -33,7 +33,7 @@ DEBUG = config('DEBUG',cast=bool)
 
 ALLOWED_HOSTS = ['mevitechnologies.com','mevitechnologies.up.railway.app','www.mevitechnologies.com']
 
-CSRF_TRUSTED_ORIGINS = ['https://www.mevitechnologies.com','https://mevitechnologies.up.railway.app','https://mevitechnologies.com/']
+CSRF_TRUSTED_ORIGINS = ['https://www.mevitechnologies.com','https://mevitechnologies.up.railway.app','https://mevitechnologies.com']
 
 
 # Application definition
