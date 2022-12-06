@@ -19,8 +19,8 @@ def contact(request):
         send_mail(
             'message form website  ' + subject ,  #subject
              message + 'from'+ name + 'with a email id '+ email, #message
-             #from email
-            ['mevitechnologies@gmail.com','support@mevitechnologies.com'], #to email
+             email,#from email
+            'mevitechnologies@gmail.com', #to email
 
         )
         zip={'name':name,'email':email,'subject':subject,'response':'Your message has been sent. Thank you!'}
