@@ -18,7 +18,7 @@ def contact(request):
         #send an email
         send_mail(
             'message form website  ' + subject ,  #subject
-             message + 'from'+ name + 'with a email id '+ email, #message
+             message + 'from         '+ name + '        with a email id '+ email, #message
              email,#from email
            ['support@mevitechnologies.com' ,'mevitechnologies@gmail.com'], #to email
 
