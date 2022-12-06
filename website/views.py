@@ -18,8 +18,8 @@ def contact(request):
         #send an email
         send_mail(
             'message form website  ' + subject ,#subject
-             message , #message
-            email,#from email
+             message + 'from'+ name + 'with a email id '+ email, #message,
+             #from email
             ['mevitechnologies@gmail.com','support@mevitechnologies.com'], #to email
         
 
