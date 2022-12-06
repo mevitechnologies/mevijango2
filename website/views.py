@@ -20,7 +20,7 @@ def contact(request):
             'message form website  ' + subject ,  #subject
              message + 'from'+ name + 'with a email id '+ email, #message
              email,#from email
-            'mevitechnologies@gmail.com', #to email
+           ['support@mevitechnologies.com' 'mevitechnologies@gmail.com'], #to email
 
         )
         zip={'name':name,'email':email,'subject':subject,'response':'Your message has been sent. Thank you!'}
